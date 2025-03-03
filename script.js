@@ -1,29 +1,17 @@
-// scripts.js
-document.addEventListener('DOMContentLoaded', () => {
-    const projects = [
-        {
-            title: 'Project One',
-            description: 'Description for project one.'
-        },
-        {
-            title: 'Project Two',
-            description: 'Description for project two.'
-        }
-    ];
+const hamburger = document.getElementById('hamburger');
+const menu = document.querySelector('.menu');
 
-    const projectSection = document.getElementById('projects');
-    projects.forEach(project => {
-        const projectDiv = document.createElement('div');
-        projectDiv.classList.add('project');
-        
-        const projectTitle = document.createElement('h3');
-        projectTitle.textContent = project.title;
-        projectDiv.appendChild(projectTitle);
-        
-        const projectDescription = document.createElement('p');
-        projectDescription.textContent = project.description;
-        projectDiv.appendChild(projectDescription);
-        
-        projectSection.appendChild(projectDiv);
-    });
-}); 
+hamburger.addEventListener('click', function () {
+    const hamIcon = this.querySelector('.hamburger-icon');
+    const crossIcon = this.querySelector('.cross-icon');
+    if (hamIcon.style.display === "none") {
+        hamIcon.style.display = "inline-block"
+        menu.style.display = "none"
+        crossIcon.style.display = "none"
+    }
+    else {
+        crossIcon.style.display = "inline-block"
+        hamIcon.style.display = "none"
+        menu.style.display = "block"
+    }
+});
