@@ -1,458 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" 
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity=
-"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-
-<body>
-    <!-- Navbar header section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h2 class="logo-heading">Mehak Baweja</h2>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars hamburger-icon"></i>
-                <i class="fas fa-times cross-icon"></i>
-            </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-items">
-                        <a class="links" href="#home">
-                              Home
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
-                              Portfolio
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#about">
-                              About
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#services">
-                              Services
-                          </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#contact">
-                              Contact Me
-                          </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Main hero banner -->
-    <section id="home" class="hero">
-        <div class="intro">
-            <div class="headings">
-                <h3 class="greet-heading">Hello, I'm</h3>
-                <h1 class="my-heading">Mehak Baweja</h1>
-                <h4 class="sub-heading">
-                    A Software Engineer with 5 years of Experience.
-                </h4>
-            </div>
-            <div class="intro-buttons">
-                <button class="btn common-btn">Hire Me</button>
-                <button class="btn ghost-btn">Get Resume</button>
-            </div>
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Scribbler - a codding landing page template for codrops</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="scribbler-global.css">
+      <link rel="stylesheet" href="scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
+        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">Scribbler</h1>
+      <p class="hero__description">Take your markdown notes in terminal</p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">hyperyolo ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">Installation</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="mac">mac</li>
+            <li class="tab" data-tab="linux">linux</li>
+            <li class="tab" data-tab="win">win</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">$  brew install scribbler</code>
+            <code class="tab__pane linux">$  apt-get install scribbler</code>
+            <code class="tab__pane win">$  gem install scribbler</code>
+          </pre>
         </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-heading">
-            <h1 class="my-heading text-center">Featured Portfolio</h1>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Fast & Light</h3>
+          <p>Start writing your notes immediately in any terminal! No more time wasted on navigating and opening your text editor.</p>
         </div>
-        <div class="portfolio-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="women.jpeg" 
-                                 alt="Web Design Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">Web Design</h3>
-                        <p class="small-para blue-text">Designing</p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="web1.jpeg" 
-                                 alt="Web Development Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Web Development
-                          </h3>
-                        <p class="small-para blue-text">Development</p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="mulesoft.png" alt="Mulesoft">
-                        </div>
-                        <h3 class="greet-heading blue-text">Mulesoft</h3>
-                        <p class="small-para blue-text">Developer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="etl.jpeg" 
-                                 alt="ETL Developer">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                          ETL Developer
-                          </h3>
-                        <p class="small-para blue-text">ODI Developer</p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="aws.jpeg " 
-                                 alt="aws Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              AWS Developer Associate 
-                          </h3>
-                        <p class="small-para blue-text">
-                              AWS 
-                          </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="git.png" 
-                                 alt="Git Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                             Git Foundation
-                          </h3>
-                        <p class="small-para blue-text">Git and GitHub</p>
-                    </div>
-                </div>
-            </div>
+        <div class="feature__item">
+          <h3 class="section__title">File Syncing</h3>
+          <p>Save your file in Dropbox then you can access to it from anywhere.</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-text">
-            <h1 class="my-heading">About Me</h1>
-            <p class="lead-para">
-                Knowledge on Datawarehousing Concepts , ODI , Business Intelligence , Data Analytics,
-                SQL , Mulesoft , Git Foundation , AWS Services .
-            </p>
-            <p>
-                Certified AZ- 900 , AZ-103/104 , AWS DVA-C01 , MCD - Level 1 , PL-300
-            </p>
+        <div class="feature__item">
+          <h3 class="section__title">Secure</h3>
+          <p>Encrypt your notes optionally. No one can get to your secrets! </p>
         </div>
-        <div class="about-image">
-            <img src="about.png" alt="About Image">
+        <div class="feature__item">
+          <h3 class="section__title">Configuration</h3>
+          <p>Maintain all your settings in a single <span class="code code--inline">config.json</span> file. Never need to redo the setting every single time jotting down a note.</p>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-heading">
-            <h1 class="my-heading text-center">My Services</h1>
+        <div class="feature__item">
+          <h3 class="section__title">Highlightings</h3>
+          <p>For better readability, scribbler has a clean, beautiful color scheme allow you to scan files fast.</p>
         </div>
-        <div class="services-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">Web Design</h3>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Web Development
-                          </h3>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">SEO</h3>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Content Writting
-                          </h3>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining of websites. 
-                              It includes aspects such as web design, 
-                              web publishing, web programming, and 
-                              database management. It is the creation 
-                              of an application that works over the 
-                              internet i.e. websites.
-                        </p>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining of websites. 
-                              It includes aspects such as web design, 
-                              web publishing, web programming, and 
-                              database management. It is the creation of an
-                            application that works over the internet i.e. 
-                              websites.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fab fa-wordpress-simple"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Wordpress Dev
-                          </h3>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining of websites. 
-                              It includes aspects such as web design, 
-                              web publishing, web programming, and 
-                              database management. It is the creation 
-                              of an application that works over the 
-                              internet i.e. websites.
-                        </p>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                              Video Editing
-                          </h3>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                        <p class="small-para">
-                            Web development refers to the creating, 
-                              building, and maintaining
-                            of websites. It includes aspects such as 
-                              web design, web publishing,
-                            web programming, and database management. 
-                              It is the creation of an
-                            application that works over the internet 
-                              i.e. websites.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="feature__item">
+          <h3 class="section__title">Keybindings</h3>
+          <p>You can expect common keybindings for scribbler. Customize <span class="code code--inline">bindings.json</span> for your own liking! </p>
         </div>
-    </section>
-
-    <!-- Contact me section -->
-    <section class="contact" id="contact">
-        <div class="contact-heading">
-            <h1 class="my-heading text-center">Contact Me</h1>
+      </div>
+      <div class="keybinding">
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Default Keybindings</h3>
+          <li>Quit without saving <span class="keybinding__label">Ctrl+C</span></li>
+          <li>Save <span class="keybinding__label">Cmd+S</span></li>
+          <li>Save and Quit <span class="keybinding__label">Ctrl+D</span></li>
+          <li>Undo <span class="keybinding__label">Cmd+Z</span></li>
+        </ul>
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Markdown Keybindings</h3>
+          <li><span class="keybinding__label">Ctrl+A</span> Insert Link Markdown</li>
+          <li><span class="keybinding__label">Ctrl+I</span> Insert Image Markdown</li>
+          <li><span class="keybinding__label">Ctrl+V</span> Insert YouTube Video</li>
+          <li><span class="keybinding__label">Ctrl+T</span> Insert Table</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p>Read our documentation for advanced keybindings and customization</p>
+        <a href="doc.html" class="button--primary">Documentation</a>
+      </div>
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.7</h4>
+            <small class="changelog__date">10/12/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Improving the writing workflow with better key bindings</li>
+              <li>Design updates</li>
+              <li>SSL Verification for web hooks</li>
+              <li>Render Emoji</li>
+            </ul>
+          </div>
         </div>
-        <div class="contact-content">
-            <div class="contact-form-container">
-                <h1 class="greet-heading">Get In Touch</h1>
-                <form class="contact-form">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Name">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Email">
-                    <input class="form-controls" type="text" 
-                           placeholder="Your Phone">
-                    <textarea class="form-controls" 
-                              placeholder="Write your message" 
-                              name="message" id="" cols="30"
-                              rows="10">
-                      </textarea>
-                    <input class="form-btn btn common-btn" 
-                           type="submit" value="Send Message">
-                </form>
-            </div>
-            <div class="contact-details">
-                <h1 class="greet-heading">My Contact Details</h1>
-                <div class="details">
-                    <h5 class="contact-heading">EMAIL</h5>
-                    <p class="contact-text">example@gmail.com</p>
-                </div>
-                <div class="details">
-                    <h5 class="contact-heading">PHONE</h5>
-                    <p class="contact-text">+91 0123456789</p>
-                </div>
-                <div class="details">
-                    <h5 class="contact-heading">FAX</h5>
-                    <p class="contact-text">+91 0123456789</p>
-                </div>
-                <div class="details">
-                    <h5 class="contact-heading">ADDRESS</h5>
-                    <p class="contact-text">San Francisco, CA</p>
-                    <p>4th Floor8 Lower</p>
-                    <p>San Francisco street, M1 50F</p>
-                </div>
-            </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.6</h4>
+            <small class="changelog__date">7/30/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Adding Unicode support</li>
+              <li>Basic text highlighting</li>
+              <li>Fresh Design</li>
+            </ul>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer section -->
-    <footer class="footer">
-        <div class="footer-content text-center">
-            <h4>
-                Copyright © 2023 All rights reserved |
-                This portfolio website template is created 
-                  by GeeksforGeeks.
-            </h4>
-            <div class="social-links">
-                <div class="footer-menu">
-                    <ul class="footer-menu-list">
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.5</h4>
+            <small class="changelog__date">5/10/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Save default md file in new folders</li>
+              <li>Ability to quick search on existing notes</li>
+            </ul>
+          </div>
         </div>
-    </footer>
-
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity=
-"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-      </script>
-    <script src="script.js"></script>
-</body>
-
+        <div class="changelog__callout">
+          <a href="#" class="button--secondary">Checkout Full Log</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Scribbler is a free HTML template created exclusively for <a href="https://tympanus.net/codrops/" target="_blank" class="link link--light">Codrops</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
 </html>
