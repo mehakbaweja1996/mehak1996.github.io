@@ -1,0 +1,25 @@
+POST - https://allegistest.api.identitynow.com:443/v3/accounts
+
+body : 
+{
+  "attributes": {
+    "sourceId": "ed9ae00e03474772bd5b937949d4132c",
+    "accountType": "Guest User B2B",
+    "MDM_ID": "60025560",
+    "FirstName": "Benjamin",
+    "LastName": "Katherine",
+    "CountryCode": "CA",
+    "JobTitle": "Software Engineer",
+    "AdministrativeContactFlag": "true",
+    "Email": "benjamin.katherine_c@gmail.com",
+    "ContactInactiveDate": "2024-01-04",
+    "ContactStatus": "Active",
+    "Supplier": "001Dz00002qAtaZIAS",
+    "SupplierStatus": null,
+    "SupplierInactiveDate": "StatusUpdateDate"
+  }
+}
+
+GET - https://allegis-sb.api.identitynow.com/v3/accounts?filters=sourceId eq "7b0b0c509d3e4bee923f6535a0ef2ebd" and nativeIdentity eq "{MDMID}"
+
+PUT - https://allegistest.api.identitynow.com:443/v3/accounts/2adf5af9ab1b4e9cb645790816770bfb

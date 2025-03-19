@@ -1,0 +1,1 @@
+{{ReltioTenantURL}}/entities/_search?options=searchByOv&filter=equals(type,'configuration/entityTypes/HCMOperatingCompany') and equals(attributes.Status,'Active')

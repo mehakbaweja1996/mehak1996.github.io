@@ -1,0 +1,1 @@
+https://allegistest.api.identitynow.com/oauth/token?grant_type=client_credentials&client_id=dc852abfcbbe41548722a14f2dd43dd5&client_secret=3d90192ea45230de81dadaef486e040b960ceda7f179fddee21373a3540f0604
