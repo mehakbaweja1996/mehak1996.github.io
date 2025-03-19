@@ -1,0 +1,62 @@
+evmdmindividualdataenrich -> incoming payload -> evmdmsuppliertosailpoint
+ 
+ #incoming payload
+ 
+ {
+  "EntityId": "1J29JWk",
+  "SourceSystemIdType": "SupplierContactID",
+  "SourceSystemId": "35323131313113",
+  "SourceSystemStatus": "Active",
+  "MasterId": "60068381",
+  "PersonType": "SupplierContact",
+  "FirstName": "Stram",
+  "MiddleName": "C",
+  "LastName": "Rajjj",
+  "Address": null,
+  "Phone": [
+    {
+      "Type": "Work",
+      "Number": "513-751-5784"
+    }
+  ],
+  "Email": [
+    {
+      "Type": "WORK_EMAIL",
+      "Email": "stram.rajjj18@gmail.com"
+    }
+  ],
+  "EmployeeClass": null,
+  "EmploymentStatus": null,
+  "CandidateStatus": null,
+  "TalentSubStatus": null,
+  "UserPersonType": null,
+  "SelfServiceFlag": null,
+  "JobTitle": "Software Engineer",
+  "AdministrativeContactFlag": "true",
+  "ContactStatus": "Active",
+  "ContactInactiveDate": "2024-01-04"
+}
+
+# we take the entity id -> we do reltio hops call-> we get organization and loction information -> we map -> we do sailpoint get call on contact mdm id 
+
+
+#preparing sailpoint response 
+
+{
+  "attributes": {
+    "sourceId": "ed9ae00e03474772bd5b937949d4132c",
+    "accountType": "Guest User B2B",
+    "MDM_ID": "60025560",
+    "FirstName": "Benjamin",
+    "LastName": "Katherine",
+    "CountryCode": "CA",
+    "JobTitle": "Software Engineer",
+    "AdministrativeContactFlag": "true",
+    "Email": "benjamin.katherine_c@gmail.com",
+    "ContactInactiveDate": "2024-01-04",
+    "ContactStatus": "Active",
+    "Supplier": "001Dz00002qAtaZIAS",
+    "SupplierStatus": null,
+    "SupplierInactiveDate": "StatusUpdateDate"
+  }
+}
