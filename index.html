@@ -48,13 +48,23 @@
         width: 100%;
       }
     }
-    
+    .image-container {
+            display: flex; /* Use flexbox */
+            justify-content: space-between; /* Evenly spaces the images */
+            align-items: center; /* Vertically centers the images */
+            height: 100vh; /* Make the container fill the height of the screen */
+        }
+        .image-container img {
+            width: 33.33%; /* Each image takes up 1/3 of the container */
+            height: auto; /* Maintain aspect ratio */
+        }
     .clearfix:after {
       content: "";
       display: table;
       clear: both;
     }
     </style>
+    </head>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -86,33 +96,15 @@
     </div>
   </div>
 </nav>
-<!--<div>
-<div style="width: 100px; float:left; height:100px; background:gray; margin:10px">
-  <img src="mule.png" alt="Cinque Terre" >
+<div class="image-container">
+  <img src="mule.png" alt="Image 1">
+  <img src="reltio.png" alt="Image 2">
+  <img src="saillogo.png" alt="Image 3">
 </div>
-<div style="width: 100px; float:left; height:100px; background:yellow; margin:10px">
-  <img src="reltio.png" alt="Forest">
-</div>
-<div style="width: 100px; float:left; height:100px; background:yellow; margin:10px">
-  <img src="saillogo.png" alt="Northern Lights" >
-</div>
-</div>-->
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <img src="mule.png" alt="Mule" >
-    </div>
-    <div class="col-sm">
-     <img src="reltio.png" alt="reltio">
-    </div>
-    <div class="col-sm">
-      <img src="saillogo.png" alt="sailpoint" >
-    </div>
-  </div>
-</div>
+
   
-    </head>
+    
    
     
 
