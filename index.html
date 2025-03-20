@@ -24,10 +24,10 @@
     </ul>
   </div>
 </nav>
-  <div class="container" >
+  <div class="container" class="centered" >
   <h3>Middle Office Documentation - evmdmsuppliertosailpoint</h3>
   </div>
-<div class="description">
+<div class="description" class="centered">
   <h2> Source and Target Systems Involved </h2>
   </div>
 
@@ -39,21 +39,13 @@
       box-sizing: border-box;
     }
 
-    .outer-container {
-  display: flex;
-  justify-content: space-between; /* Distribute images evenly */
-  align-items: center;           /* Align images vertically in the center */
-  width: 80%;                    /* Adjust as needed */
-  max-width: 1000px;             /* Optional max-width */
-}
-
-.image-container img
-{
-  width: 100%;  /* Ensures images fill the container */
-  height: auto; /* Maintains the aspect ratio */
-  display: block; /* Removes unwanted space below the image */
-}
-    
+ 
+    .centered {
+            width: 300px;
+            height: 200px;
+            background-color: lightslategrey;
+        }
+ 
     .responsive {
       padding: 0 6px;
       float: left;
@@ -83,8 +75,8 @@
    
     <div class="outer-container">
     <div class="responsive">
-      <div class="gallery" class="image-container">
-        <a target="_blank" href="mule.png">
+      <div class="image-container">
+       
           <img src="mule.png" alt="Cinque Terre" width="700" height="400">
         </a>
         <div class="desc">Mulesoft - Integration Tool</div>
