@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!--<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Documentation</a>
@@ -32,27 +32,27 @@
   </div>
 
   <style>
-    div.gallery {
-      border: 1px solid #ccc;
-    }
     
-    div.gallery:hover {
-      border: 1px solid #777;
-    }
     
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-    
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
     
     * {
       box-sizing: border-box;
     }
+
+    .outer-container {
+  display: flex;
+  justify-content: space-between; /* Distribute images evenly */
+  align-items: center;           /* Align images vertically in the center */
+  width: 80%;                    /* Adjust as needed */
+  max-width: 1000px;             /* Optional max-width */
+}
+
+.image-container img
+{
+  width: 100%;  /* Ensures images fill the container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes unwanted space below the image */
+}
     
     .responsive {
       padding: 0 6px;
@@ -81,9 +81,9 @@
     </style>
     </head>
    
-    
+    <div class="outer-container">
     <div class="responsive">
-      <div class="gallery">
+      <div class="gallery" class="image-container">
         <a target="_blank" href="mule.png">
           <img src="mule.png" alt="Cinque Terre" width="700" height="400">
         </a>
@@ -93,7 +93,7 @@
     
     
     <div class="responsive">
-      <div class="gallery">
+      <div class="gallery" class="image-container">
         <a target="_blank" href="reltio.png">
           <img src="reltio.png" alt="Forest" width="700" height="400">
         </a>
@@ -102,117 +102,14 @@
     </div>
     
     <div class="responsive">
-      <div class="gallery">
+      <div class="gallery" class="image-container">
         <a target="_blank" href="saillogo.png">
           <img src="saillogo.png" alt="Northern Lights" width="700" height="400">
         </a>
         <div class="desc">Target for storing Supplier and Contact Information</div>
       </div>
     </div>
-  -->
-
-  <nav>
-    <div class="heading">Evolve Middle Office Documenation</div>
-    <span class="sideMenuButton" 
-        onclick="openNavbar()">
-        &#9776
-    </span>
-
-    <div class="navbar">
-        <ul>
-          <li><a href="overview.html">Application Overview</a></li>
-          <li><a href="design.html">Design Diagram</a></li>
-          <li><a href="mapping.html">Mapping</a></li>
-          <li><a href="endpoint.html">Endpoints</a></li>
-          <li><a href="enhancement.html">Enhancements</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Side navigation bar for 
-    responsive website -->
-<div class="sideNavigationBar" 
-    id="sideNavigationBar">
-    <a href="#" class="closeButton" 
-        onclick="closeNavbar()">
-        &#x274C
-    </a>
-    <li><a href="overview.html">Application Overview</a></li>
-    <li><a href="design.html">Design Diagram</a></li>
-    <li><a href="mapping.html">Mapping</a></li>
-    <li><a href="endpoint.html">Endpoints</a></li>
-    <li><a href="enhancement.html">Enhancements</a></li>
-</div>
-
-<!-- Content -->
-<div class="line" id="Home">
-    <div class="side1">
-        <h1>GeeksforGeeks</h1>
-        <button>
-            <a href=
-"https://www.geeksforgeeks.org/">
-                Explore More
-            </a>
-        </button>
-    </div>
-    <div class="side2">
-        <img src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png"
-            width="500">
-    </div>
-</div>
-
-<section class="about" id="My Projects">
-    <div class="content">
-        <div class="title">
-            <span>Courses</span>
-        </div>
-        <div class="boxes">
-            <div class="box">
-                <div class="topic">
-                    <a href="" target="_blank">
-                        DSA
-                    </a>
-                </div>
-                <p>
-                    The term DSA stands for Data 
-                    Structures and Algorithms. As 
-                    the name itself suggests, it 
-                    is a combination of two 
-                    separate yet interrelated 
-                    topics.
-                </p>
-            </div>
-            <div class="box">
-
-                <div class="topic">
-                    <a href="" target="_blank">
-                        HTML
-                    </a>
-                </div>
-                <p>
-                    HTML stands for HyperText 
-                    Markup Language. It is used 
-                    to design web pages using 
-                    the markup language.
-                </p>
-            </div>
-
-            <div class="box">
-                <div class="topic">
-                    <a href="" target="_blank">
-                        Javascript
-                    </a>
-                </div>
-                <p>
-                    JavaScript (JS) is the most 
-                    popular lightweight, interpreted 
-                    compiled programming language.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+  </div>
 
 </body>
 </html>
