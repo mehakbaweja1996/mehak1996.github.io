@@ -3,7 +3,7 @@ name: Pages
 on:
     push:
         branches:
-            -projectdocumentation
+            - projectdocumentation
 
 permissions:
     contents: read
@@ -17,9 +17,9 @@ concurrency:
 jobs:
     deploy:
         environment:
-            name: gitub-pages
+            name: github-pages
             url: ${{steps.deployment.outputs.page_url }}
-        runs -on: ubuntu-latest
+        runs-on: ubuntu-latest
 
         steps:
           - name: Checkout
@@ -38,6 +38,7 @@ jobs:
             uses: actions/deploy-pages@v4
 
           - name: Report status
-            run:
-              echo "# Deployment status: ${{job.status}}" >> $GITHUB_STEP_SUMMARY
-              echo  "Deployed ${{ github.ref }} to ${{ steps.deployment.outputs.page_url}}" >> GITHUB_SETUP_SUMMARY
+            run: |
+              echo "# Deployment status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+              echo "Deployed ${{ github.ref }} to ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+              
